@@ -1,12 +1,10 @@
 .text {
-  font-size: 16px;
-  line-height: 145%;
-  opacity: 0.8;
-  position: relative;
-  z-index: 5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #e5e7fa;
 
   &--white {
-    color: #ffffff;
-    opacity: 1;
+    color: $main-text-color;
   }
 }
