@@ -1,0 +1,8 @@
+.industries__list {
+  @include list-none;
+  width: 73.4vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

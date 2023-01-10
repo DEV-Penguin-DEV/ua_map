@@ -1,0 +1,62 @@
+.languages-settings__list {
+  @include list-none;
+
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 35px;
+  /* identical to box height, or 233% */
+  text-transform: uppercase;
+
+  color: $title-color;
+  transition: 0.5s;
+}
+
+.languages-settings__button {
+  @include button-none;
+  width: 6.56px;
+  height: 6.54px;
+  box-sizing: border-box;
+  margin-left: 6px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.languages-settings {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &--closed {
+    & .languages-settings__button {
+      border: 3px solid transparent;
+      border-top: 3px solid #ffffff;
+    }
+
+    &:hover {
+      & .languages-settings__button {
+        border-top-color: $title--text-color;
+      }
+    }
+  }
+
+  &--open {
+    &.languages-settings__button {
+      border: 3px solid transparent;
+      border-bottom: 3px solid #ffffff;
+    }
+
+    &:hover {
+      & .languages-settings__button {
+        border-bottom-color: $title--text-color;
+      }
+    }
+  }
+
+  &:hover {
+    & .languages-settings__list {
+      color: $title--text-color;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.offer {
+  background: rgba(13, 13, 13, 0.5);
+  backdrop-filter: blur(12.5px);
+  position: relative;
+  padding: 40px 40px 15px 40px;
+  box-sizing: border-box;
+  width: 420px;
+
+  &::before {
+    @include defaul-pseudo-element(100%, 10px);
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #0047ff 0%, #2f0dff 100%);
+  }
+
+  &--active {
+    background: linear-gradient(180deg, #0047ff 0%, #2f0dff 98.68%);
+    backdrop-filter: none;
+
+    &::before {
+      content: none;
+    }
+
+    & .offer__opportunity::before {
+      background-image: url("./../../public/img/star-in--active.svg");
+    }
+
+    & .offer__opportunity--active::before {
+      background-image: url("./../../public/img/star--yellow.svg");
+    }
+  }
+}
+
+.offer__title {
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 50px;
+  /* identical to box height, or 125% */
+
+  text-transform: uppercase;
+  position: relative;
+
+  color: $title--text-color;
+  @include margin-bottom(60px);
+
+  &::before {
+    @include defaul-pseudo-element(100px, 10px);
+    border: 1px solid #ffffff;
+    bottom: -10px;
+    box-sizing: border-box;
+  }
+}
+
+.offer__opportunities {
+  @include list-none;
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+
+.offer__opportunity {
+  position: relative;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  /* or 176% */
+
+  color: #ffffff;
+
+  opacity: 0.5;
+
+  &::before {
+    @include defaul-pseudo-element(20px);
+    background: url("./../../public/img/star.svg") no-repeat center;
+    left: -40px;
+    top: 3px;
+  }
+
+  &--active {
+    opacity: 1;
+
+    &::before {
+      background-image: url("./../../public/img/star--blue.svg");
+    }
+  }
+}
+
+.offer__price {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  /* or 50% */
+
+  color: #ffffff;
+  margin: 0;
+
+  &--old {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    width: fit-content;
+
+    /* identical to box height, or 83% */
+
+    color: #ffffff;
+    opacity: 0.5;
+    position: relative;
+
+    &::before {
+      @include defaul-pseudo-element(100%, 1px);
+      background: #d60335;
+      top: 10px;
+    }
+  }
+}
+
+.offer__amount {
+  font-weight: 800;
+  font-size: 50px;
+  /* or 50% */
+
+  color: $title--text-color;
+
+  &--old {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 25px;
+  }
+}

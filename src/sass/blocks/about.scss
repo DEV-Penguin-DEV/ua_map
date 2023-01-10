@@ -1,0 +1,21 @@
+.about__text-title {
+  margin-bottom: 54px;
+}
+
+.about__content-container {
+  display: flex;
+  width: 73.4vw;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__text-container {
+  width: 720px;
+}
+
+.about__text {
+  &:not(:first-child) {
+    @include margin-bottom(20px);
+  }
+}

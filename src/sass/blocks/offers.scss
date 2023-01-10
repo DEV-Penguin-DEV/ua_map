@@ -1,0 +1,17 @@
+.offers {
+  margin-bottom: 100px;
+}
+
+.offers__text-title {
+  margin-bottom: 50px;
+}
+
+.offers__list {
+  @include list-none;
+  width: fit-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+}

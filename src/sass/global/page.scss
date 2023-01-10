@@ -17,4 +17,11 @@ html {
   color: $main-text-color;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+
+  &::before {
+    @include defaul-pseudo-element(260px, 260px);
+    right: 0;
+    background: url("./../../public/img/blue-lines-square.svg") no-repeat center
+      center;
+  }
 }

@@ -1,0 +1,67 @@
+.do-more-bg {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: min-content;
+  position: relative;
+}
+
+.do-more-bg__img {
+  position: absolute;
+
+  &--plant {
+    bottom: 468px;
+    left: 141px;
+  }
+  &--water-wall {
+    top: 199px;
+    left: 227px;
+  }
+  &--energy {
+    top: 131px;
+    left: 413px;
+  }
+  &--incubator {
+    top: 303px;
+    left: 385px;
+  }
+  &--servers {
+    top: 244px;
+    left: 538px;
+  }
+  &--building {
+    top: 138px;
+    left: 682px;
+  }
+  &--drone {
+    top: 86px;
+    left: 809px;
+  }
+  &--laser {
+    top: 181px;
+    right: 603px;
+  }
+  &--medTech {
+    top: 325px;
+    left: 778px;
+  }
+  &--agriTech {
+    top: 337px;
+    left: 653px;
+  }
+  &--chemistry {
+    top: 448px;
+    left: 716px;
+  }
+  &--truck {
+    top: 425px;
+    right: 673px;
+  }
+  &--atonomic {
+    top: 313px;
+    right: 552px;
+  }
+  &--battery {
+    top: 491px;
+    right: 592px;
+  }
+}

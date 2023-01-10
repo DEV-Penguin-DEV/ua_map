@@ -1,0 +1,44 @@
+.first-screen {
+  padding-top: 295px;
+  padding-bottom: 132px;
+  min-height: 1170px;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  background: url("./../../public/img/ukraine-map.svg") no-repeat center center;
+}
+
+.first-screen__logo {
+  margin-bottom: 50.6px;
+}
+
+.first-screen__text {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 30px;
+  /* or 94% */
+
+  text-align: center;
+
+  color: #e5e7fa;
+  margin-bottom: 290px;
+}
+
+.project-description__title {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 75px;
+  /* or 167% */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  @include margin-bottom(30px);
+}
+
+.project-description__text {
+  max-width: 980px;
+  margin: 0 auto;
+}
