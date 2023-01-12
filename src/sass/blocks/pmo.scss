@@ -5,6 +5,17 @@
   align-items: center;
   background: url("./../../public/img/pmo-bg.svg") no-repeat center center;
   position: relative;
+  flex-shrink: 0;
+
+  @media (max-width: $size--5) {
+    width: 550px;
+  }
+
+  @media (max-width: $size--4) {
+    width: 550px;
+    height: 570px;
+    margin-bottom: 30px;
+  }
 }
 
 .pmo__tilte {
@@ -65,5 +76,32 @@
   &--reporting {
     top: 185px;
     left: 0;
+  }
+
+  @media (max-width: $size--5) {
+    &--planning {
+      top: 0;
+      right: 195.5px;
+    }
+
+    &--monitoring {
+      top: 175px;
+      right: 0;
+    }
+
+    &--managing {
+      bottom: 0;
+      right: 80px;
+    }
+
+    &--controlling {
+      bottom: 0;
+      left: 80px;
+    }
+
+    &--reporting {
+      top: 160px;
+      left: 0;
+    }
   }
 }

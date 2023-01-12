@@ -1,3 +1,8 @@
+.do-more {
+  padding: 150px 0;
+  margin-bottom: 0;
+}
+
 .do-more__text-title {
   @include margin-bottom(50px);
 }
@@ -10,6 +15,22 @@
   margin: 0 auto;
   justify-content: space-between;
   margin-bottom: 150px;
+
+  @media (max-width: $size--9) {
+    width: 90vw;
+  }
+}
+
+.do-more__menu-item {
+  width: fit-content;
+
+  @media (max-width: $size--10) {
+    max-width: 320px;
+  }
+
+  @media (max-width: $size--6) {
+    width: min-content;
+  }
 }
 
 .do-more__menu-button {
@@ -20,6 +41,10 @@
   /* or 100% */
 
   color: #ffffff;
+  @media (max-width: $size--4) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   &--active {
     color: $title--text-color;
@@ -78,10 +103,47 @@
     left: 0;
     z-index: -2;
   }
+
+  @media (max-width: $size--8) {
+    width: 475px;
+  }
+
+  @media (max-width: $size--6) {
+    width: 425px;
+  }
+
+  @media (max-width: $size--5) {
+    padding: 0 35px 80px 35px;
+    width: 400px;
+  }
+
+  @media (max-width: $size--4) {
+    padding: 0 35px 60px 35px;
+    width: 350px;
+    top: 35px;
+  }
+
+  @media (max-width: $size--3) {
+    padding: 0 20px 40px 20px;
+    width: 255px;
+    top: -20px;
+  }
 }
 
 .do-more__img {
   margin-bottom: 50px;
+
+  @media (max-width: $size--4) {
+    width: 150px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $size--4) {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .do-more__item-title {
@@ -92,6 +154,11 @@
 
   color: #ffffff;
   @include margin-bottom(20px);
+
+  @media (max-width: $size--3) {
+    font-size: 25px;
+    line-height: 15px;
+  }
 }
 
 .do-more__item-text {
@@ -102,4 +169,9 @@
 
   color: #e5e7fa;
   margin: 0;
+
+  @media (max-width: $size--3) {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }

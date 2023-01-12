@@ -10,6 +10,16 @@
 
   color: $title-color;
 
+  @media (max-width: $size--4) {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  @media (max-width: $size--3) {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
   &--h3 {
     font-weight: 700;
     font-size: 25px;
@@ -19,6 +29,11 @@
     text-transform: none;
 
     color: $main-text-color;
+
+    @media (max-width: $size--4) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   &--text {
@@ -31,5 +46,15 @@
 
     color: $title--text-color;
     @include margin-bottom(50px);
+
+    @media (max-width: $size--4) {
+      font-size: 60px;
+      line-height: 45px;
+    }
+
+    @media (max-width: $size--3) {
+      font-size: 40px;
+      line-height: 25px;
+    }
   }
 }

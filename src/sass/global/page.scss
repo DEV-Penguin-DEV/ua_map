@@ -23,5 +23,10 @@ html {
     right: 0;
     background: url("./../../public/img/blue-lines-square.svg") no-repeat center
       center;
+
+    @media (max-width: $size--3) {
+      width: 200px;
+      height: 200px;
+    }
   }
 }

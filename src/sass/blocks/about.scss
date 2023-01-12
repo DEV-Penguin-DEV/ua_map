@@ -1,3 +1,12 @@
+.about {
+  padding-bottom: 90px;
+  margin-bottom: 0;
+
+  @media (max-width: $size--4) {
+    padding-bottom: 40px;
+  }
+}
+
 .about__text-title {
   margin-bottom: 54px;
 }
@@ -8,10 +17,34 @@
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $size--8) {
+    width: 85vw;
+  }
+
+  @media (max-width: $size--6) {
+    width: 90vw;
+  }
+
+  @media (max-width: $size--4) {
+    flex-direction: column;
+  }
 }
 
 .about__text-container {
   width: 720px;
+
+  @media (max-width: $size--8) {
+    width: 575px;
+  }
+
+  @media (max-width: $size--6) {
+    width: 560px;
+  }
+
+  @media (max-width: $size--4) {
+    text-align: center;
+  }
 }
 
 .about__text {

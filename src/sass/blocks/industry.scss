@@ -1,6 +1,14 @@
 .industry {
   width: 240px;
   text-align: center;
+
+  @media (max-width: $size--4) {
+    width: 70vw;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .industry__img-container {
@@ -11,11 +19,18 @@
   &::before {
     @include defaul-pseudo-element(180px);
     background: linear-gradient(180deg, #0047ff 0%, #000000 100%);
-    position: absolute;
     left: 30px;
     bottom: -17px;
     opacity: 0.1;
     border-radius: 50%;
+
+    @media (max-width: $size--4) {
+      left: 37%;
+    }
+
+    @media (max-width: $size--3) {
+      left: 33%;
+    }
   }
 
   &::after {
@@ -25,6 +40,14 @@
     left: 13px;
     bottom: -25px;
     z-index: -1;
+
+    @media (max-width: $size--4) {
+      left: 35%;
+    }
+
+    @media (max-width: $size--3) {
+      left: 31%;
+    }
   }
 }
 

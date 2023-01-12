@@ -5,6 +5,13 @@
   position: relative;
 }
 
+.do-more-bg__map {
+  @media (max-width: $size--8) {
+    width: 100vw;
+    height: auto;
+  }
+}
+
 .do-more-bg__img {
   position: absolute;
 
@@ -63,5 +70,110 @@
   &--battery {
     top: 491px;
     right: 592px;
+  }
+
+  @media (max-width: $size--8) {
+    &--plant {
+      bottom: 28.8vw;
+      left: 8.7vw;
+    }
+    &--water-wall {
+      top: 12.2vw;
+      left: 14vw;
+    }
+    &--energy {
+      top: 8vw;
+      left: 25.5vw;
+    }
+    &--incubator {
+      top: 18.7vw;
+      left: 23.7vw;
+    }
+    &--servers {
+      top: 15vw;
+      left: 33.2vw;
+    }
+    &--building {
+      top: 8.5vw;
+      left: 42vw;
+    }
+    &--drone {
+      top: 5.3vw;
+      left: 50vw;
+    }
+    &--laser {
+      top: 11.1vw;
+      right: 37.2vw;
+    }
+    &--medTech {
+      top: 20vw;
+      left: 48vw;
+    }
+    &--agriTech {
+      top: 20.8vw;
+      left: 40.3vw;
+    }
+    &--chemistry {
+      top: 27.6vw;
+      left: 44.2vw;
+    }
+    &--truck {
+      top: 26.2vw;
+      right: 41.5vw;
+    }
+    &--atonomic {
+      top: 19.3vw;
+      right: 34vw;
+    }
+    &--battery {
+      top: 30.3vw;
+      right: 36.5vw;
+    }
+  }
+
+  @media (max-width: $size--5) {
+    height: auto;
+    &--plant {
+      width: 5.8vw;
+    }
+    &--water-wall {
+      width: 6.25vw;
+    }
+    &--energy {
+      width: 4.2vw;
+    }
+    &--incubator {
+      width: 4vw;
+    }
+    &--servers {
+      width: 5.7vw;
+    }
+    &--building {
+      width: 5.6vw;
+    }
+    &--drone {
+      width: 6.8vw;
+    }
+    &--laser {
+      width: 4.15vw;
+    }
+    &--medTech {
+      width: 5.2vw;
+    }
+    &--agriTech {
+      width: 4.8vw;
+    }
+    &--chemistry {
+      width: 4.6vw;
+    }
+    &--truck {
+      width: 6.4vw;
+    }
+    &--atonomic {
+      width: 5.6vw;
+    }
+    &--battery {
+      width: 4.15vw;
+    }
   }
 }

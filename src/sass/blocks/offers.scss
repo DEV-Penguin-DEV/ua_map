@@ -1,5 +1,9 @@
 .offers {
   margin-bottom: 100px;
+
+  @media (max-width: $size--3) {
+    margin-bottom: 70px;
+  }
 }
 
 .offers__text-title {
@@ -14,4 +18,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-content: space-between;
+
+  @media (max-width: $size--5) {
+    gap: 10px;
+  }
 }
