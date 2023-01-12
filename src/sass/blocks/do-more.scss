@@ -39,11 +39,34 @@
   font-size: 25px;
   line-height: 25px;
   /* or 100% */
+  transition: 0.85s;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  position: relative;
 
   color: #ffffff;
   @media (max-width: $size--4) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  &::before {
+    @include defaul-pseudo-element(0, 3px);
+    transition: 0.85s;
+    bottom: -10px;
+    left: 50%;
+    background-color: $title--text-color;
+  }
+
+  &:hover {
+    transform: scale(1.15);
+
+    &::before {
+      width: 100%;
+      left: 0;
+      transition: 0.85s;
+    }
   }
 
   &--active {
@@ -65,6 +88,14 @@
   background: linear-gradient(180deg, #0047ff 0%, #2f0dff 100%);
   box-shadow: 0px 10px 10px rgba(0, 71, 255, 0.25);
   margin: 0 auto;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    background: linear-gradient(180deg, #003fde 0%, #250ec1 100%);
+    box-shadow: 0px 10px 10px rgba(0, 71, 255, 0.4);
+  }
 }
 
 .do-more__list {
@@ -175,3 +206,31 @@
     line-height: 20px;
   }
 }
+
+// Animations
+@keyframes menu-button--hover {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes menu-button--no-hover {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+// TODO
+// @keyframes item-animation {
+//   from {
+//     right: -100%;
+//   }
+//   to {
+//     right: 0;
+//   }
+// }
