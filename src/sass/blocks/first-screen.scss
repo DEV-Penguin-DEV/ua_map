@@ -6,7 +6,6 @@
   text-align: center;
   z-index: 2;
   position: relative;
-  background: url("./../../public/img/ukraine-map.svg") no-repeat center center;
 
   @media (max-width: $size--4) {
     background-position-y: 100px;
@@ -17,6 +16,41 @@
 
   @media (max-width: $size--3) {
     padding-top: 230px;
+  }
+}
+
+.block-animation--active {
+  & svg {
+    & path {
+      animation: dash 6.5s linear forwards;
+
+      @keyframes dash {
+        from {
+          stroke-dashoffset: 13000;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    }
+  }
+}
+
+.first-screen__bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  & svg {
+    width: 100%;
+
+    & path {
+      stroke-dasharray: 11000;
+      stroke-dashoffset: 11000;
+    }
   }
 }
 

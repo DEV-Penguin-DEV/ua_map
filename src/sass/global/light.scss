@@ -7,6 +7,29 @@
   z-index: -1;
 }
 
+.block-animation--active {
+  .light {
+    &--1 {
+      animation: light--1 4s ease-in forwards;
+    }
+
+    &--2 {
+    }
+
+    &--3 {
+    }
+
+    &--4 {
+    }
+
+    &--5 {
+    }
+
+    &--6 {
+    }
+  }
+}
+
 .light {
   position: absolute;
   z-index: -1;
@@ -17,8 +40,8 @@
     width: 2041px;
     height: 2041px;
     filter: blur(50px);
-    top: -1020.5px;
-    right: -700px;
+    top: -2000px;
+    right: -2000px;
     border-radius: 50%;
   }
 
@@ -74,15 +97,13 @@
     }
 
     @media (max-width: $size--4) {
-      bottom: 400px;
-      left: 105px;
-    }
-
-    @media (max-width: $size--3) {
       width: 100vw;
       height: 100vw;
       bottom: 450px;
       left: 0px;
+    }
+
+    @media (max-width: $size--3) {
     }
   }
 
@@ -142,5 +163,17 @@
     filter: blur(25px);
     left: 381px;
     bottom: 412px;
+  }
+}
+
+// Animations
+@keyframes light--1 {
+  from {
+    top: -2000px;
+    right: -2000px;
+  }
+  to {
+    top: -1020.5px;
+    right: -700px;
   }
 }

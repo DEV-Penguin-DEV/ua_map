@@ -5,14 +5,34 @@
   align-items: center;
   min-width: 100%;
   margin: 0 auto;
+  overflow-y: clip;
+}
+
+.block-animation--active {
+  & .main-footer__container {
+    &::before {
+      animation: footer-line 1.4s linear forwards;
+    }
+  }
 }
 
 .main-footer__container {
   padding: 30px 0;
   margin: 0 auto;
-  border-top: 1px solid #2f0dff;
-  display: flex;
-  justify-content: space-between;
+
+  position: relative;
+
+  &-animation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &::before {
+    @include defaul-pseudo-element(0, 1px);
+    top: 0;
+    left: 50%;
+    background-color: #2f0dff;
+  }
 }
 
 .main-footer__copyright {
@@ -23,4 +43,16 @@
   margin: 0;
 
   color: #e5e7fa;
+}
+
+// Animiations
+@keyframes footer-line {
+  from {
+    width: 0%;
+    left: 50%;
+  }
+  to {
+    left: 0;
+    width: 100%;
+  }
 }
