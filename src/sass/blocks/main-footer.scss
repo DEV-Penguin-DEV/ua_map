@@ -11,7 +11,7 @@
 .block-animation--active {
   & .main-footer__container {
     &::before {
-      animation: footer-line 1.4s linear forwards;
+      animation: footer-line 0.5s linear forwards;
     }
   }
 }

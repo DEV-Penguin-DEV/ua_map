@@ -18,9 +18,10 @@
   position: absolute;
   transition: 0.7s;
   cursor: pointer;
+  transition: 0.7s !important;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.2) !important;
   }
 
   &--plant {

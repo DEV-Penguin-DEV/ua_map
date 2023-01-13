@@ -75,7 +75,7 @@
   text-align: center;
 
   color: #e5e7fa;
-  margin-bottom: 290px;
+  @include margin-bottom(290px);
 
   @media (max-width: $size--5) {
     margin-bottom: 220px;
