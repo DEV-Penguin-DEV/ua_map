@@ -71,8 +71,8 @@ ScrollReveal().reveal('.project-description__title', {
 ScrollReveal().reveal('.project-description__text', {
   reset: true,
   origin: 'bottom',
-  distance: '300px',
-  duration: 1500,
+  distance: '150px',
+  duration: 2000,
 });
 
 if(mediaQuery1024.matches) {
