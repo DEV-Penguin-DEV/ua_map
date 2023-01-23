@@ -10,22 +10,9 @@
 .block-animation--active {
   .light {
     &--1 {
-      animation: light--1 4s ease-in forwards;
-    }
-
-    &--2 {
-    }
-
-    &--3 {
-    }
-
-    &--4 {
-    }
-
-    &--5 {
-    }
-
-    &--6 {
+      transform: translateX(-1300px) translateY(1000px);
+      transition: 4s;
+      will-change: transform;
     }
   }
 }
@@ -163,17 +150,5 @@
     filter: blur(25px);
     left: 381px;
     bottom: 412px;
-  }
-}
-
-// Animations
-@keyframes light--1 {
-  from {
-    top: -2000px;
-    right: -2000px;
-  }
-  to {
-    top: -1020.5px;
-    right: -700px;
   }
 }

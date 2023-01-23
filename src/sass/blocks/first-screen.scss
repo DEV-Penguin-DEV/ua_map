@@ -27,6 +27,7 @@
   & svg {
     & path {
       animation: dash 6.5s linear forwards;
+      will-change: stroke-dashoffset;
 
       @keyframes dash {
         from {

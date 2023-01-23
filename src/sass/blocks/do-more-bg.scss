@@ -1,6 +1,6 @@
 .do-more-bg {
   margin: 0 auto;
-  margin-padding-top: 30px;
+  margin-top: 30px;
   width: min-content;
   position: relative;
 }
@@ -26,117 +26,117 @@
   }
 
   &--plant {
-    padding-top: 330px;
+    top: 330px;
     left: 141px;
   }
   &--water-wall {
-    padding-top: 199px;
+    top: 199px;
     left: 227px;
   }
   &--energy {
-    padding-top: 131px;
+    top: 131px;
     left: 413px;
   }
   &--incubator {
-    padding-top: 303px;
+    top: 303px;
     left: 385px;
   }
   &--servers {
-    padding-top: 244px;
+    top: 244px;
     left: 538px;
   }
   &--building {
-    padding-top: 138px;
+    top: 138px;
     left: 682px;
   }
   &--drone {
-    padding-top: 86px;
+    top: 86px;
     left: 809px;
   }
   &--laser {
-    padding-top: 181px;
+    top: 181px;
     right: 603px;
   }
   &--medTech {
-    padding-top: 325px;
+    top: 325px;
     left: 778px;
   }
   &--agriTech {
-    padding-top: 337px;
+    top: 337px;
     left: 653px;
   }
   &--chemistry {
-    padding-top: 448px;
+    top: 448px;
     left: 716px;
   }
   &--truck {
-    padding-top: 425px;
+    top: 425px;
     right: 673px;
   }
   &--atonomic {
-    padding-top: 313px;
+    top: 313px;
     right: 552px;
   }
   &--battery {
-    padding-top: 491px;
+    top: 491px;
     right: 592px;
   }
 
   @media (max-width: $size--8) {
     &--plant {
-      padding-top: 20.8%;
+      top: 37.8%;
       left: 8.7%;
     }
     &--water-wall {
-      padding-top: 12.2%;
+      top: 20.2%;
       left: 14%;
     }
     &--energy {
-      padding-top: 8%;
+      top: 12%;
       left: 25.5%;
     }
     &--incubator {
-      padding-top: 18.7%;
+      top: 31.7%;
       left: 23.7%;
     }
     &--servers {
-      padding-top: 15%;
+      top: 26%;
       left: 33.2%;
     }
     &--building {
-      padding-top: 8.5%;
+      top: 14.5%;
       left: 42%;
     }
     &--drone {
-      padding-top: 5.3%;
+      top: 9.3%;
       left: 50%;
     }
     &--laser {
-      padding-top: 11.1%;
+      top: 19%;
       right: 37.2%;
     }
     &--medTech {
-      padding-top: 20%;
+      top: 36%;
       left: 48%;
     }
     &--agriTech {
-      padding-top: 20.8%;
+      top: 41%;
       left: 40.3%;
     }
     &--chemistry {
-      padding-top: 27.6%;
+      top: 55%;
       left: 44.2%;
     }
     &--truck {
-      padding-top: 26.2%;
+      top: 48%;
       right: 41.5%;
     }
     &--atonomic {
-      padding-top: 19.3%;
+      top: 36%;
       right: 34%;
     }
     &--battery {
-      padding-top: 30.3%;
+      top: 58%;
       right: 36.5%;
     }
   }
