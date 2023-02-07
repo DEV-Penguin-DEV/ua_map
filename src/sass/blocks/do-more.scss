@@ -110,9 +110,10 @@
   width: 550px;
   box-sizing: border-box;
   position: absolute;
-  right: 0;
+  right: -40vw;
   top: 117px;
   z-index: 1;
+  transition: 1s;
 
   &::before {
     @include defaul-pseudo-element(100%, 75%);
@@ -158,6 +159,11 @@
     padding: 0 20px 40px 20px;
     width: 255px;
     top: -20px;
+  }
+
+  &--active {
+    right: 0;
+    transition: 1s;
   }
 }
 

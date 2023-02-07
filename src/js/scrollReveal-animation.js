@@ -21,14 +21,6 @@ ScrollReveal().reveal('.title--text', {
   duration: 1000,
 });
 
-ScrollReveal().reveal('.do-more__item--active', {
-  reset: true,
-  distance: '350px',
-  origin: 'right',
-  duration: 1000,
-  delay: 1000,
-});
-
 ScrollReveal().reveal('.do-more-bg__map', {
   reset: true,
   scale: 1.4,
