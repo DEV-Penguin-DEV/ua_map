@@ -1,5 +1,6 @@
 import ScrollReveal from 'scrollreveal';
 const mediaQuery1024 = window.matchMedia('(min-width: 1024px)');
+const mediaQuery500 = window.matchMedia('(min-width: 500px)');
 
 ScrollReveal().reveal('.industry', {
   reset: true,
@@ -103,26 +104,29 @@ ScrollReveal().reveal('.do-more__button', {
   duration: 1500,
 });
 
-ScrollReveal().reveal('.offer__title', {
-  reset: true,
-  origin: 'left',
-  distance: '200px',
-  duration: 1500,
-});
+if (mediaQuery500.matches) {
+  ScrollReveal().reveal('.offer__title', {
+    reset: true,
+    origin: 'left',
+    distance: '200px',
+    duration: 1500,
+  });
 
-ScrollReveal().reveal('.offer__opportunity', {
-  reset: true,
-  origin: 'top',
-  distance: '200px',
-  duration: 1500,
-});
+  ScrollReveal().reveal('.offer__opportunity', {
+    reset: true,
+    origin: 'top',
+    distance: '200px',
+    duration: 1500,
+  });
 
-ScrollReveal().reveal('.offer__price-animation-container', {
-  reset: true,
-  origin: 'bottom',
-  distance: '200px',
-  duration: 1500,
-});
+  ScrollReveal().reveal('.offer__price-animation-container', {
+    reset: true,
+    origin: 'bottom',
+    distance: '200px',
+    duration: 1500,
+  });
+}
+
 
 ScrollReveal().reveal('.pmo', {
   reset: true,

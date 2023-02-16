@@ -49,12 +49,20 @@
   transform: translate(-50%, -50%);
   width: 100%;
 
+  @media (max-width: $size--6) {
+    top: 42%;
+  }
+
   @media (max-width: $size--5) {
     top: 37%;
   }
 
-  @media (max-width: $size--6) {
-    top: 42%;
+  @media (max-width: $size--2) {
+    top: 27%;
+  }
+
+  @media (max-width: $size--1) {
+    top: 21%;
   }
 
   & svg {
@@ -100,6 +108,13 @@
     margin-bottom: 140px;
     font-size: 18px;
     line-height: 20px;
+  }
+
+  @media (max-width: $size--2) {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
   }
 }
 

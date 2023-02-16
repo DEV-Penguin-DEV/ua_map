@@ -1,6 +1,7 @@
 .do-more {
   padding: 150px 0;
   margin-bottom: 0;
+  overflow: hidden;
 }
 
 .do-more__text-title {
@@ -19,6 +20,14 @@
   @media (max-width: $size--9) {
     width: 90vw;
   }
+
+  @media (max-width: $size--2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
 }
 
 .do-more__menu-item {
@@ -30,6 +39,11 @@
 
   @media (max-width: $size--6) {
     width: min-content;
+  }
+
+  @media (max-width: $size--2) {
+    width: auto;
+    max-width: 80%;
   }
 }
 
@@ -110,7 +124,7 @@
   width: 550px;
   box-sizing: border-box;
   position: absolute;
-  right: -40vw;
+  right: -70vw;
   top: 117px;
   z-index: 1;
   transition: 1s;
@@ -151,13 +165,25 @@
 
   @media (max-width: $size--4) {
     padding: 0 35px 60px 35px;
-    width: 350px;
+    width: 300px;
     top: 35px;
   }
 
   @media (max-width: $size--3) {
     padding: 0 20px 40px 20px;
     width: 255px;
+    top: -20px;
+  }
+
+  @media (max-width: $size--2) {
+    padding: 0 20px 20px 20px;
+    width: 160px;
+    top: -20px;
+  }
+
+  @media (max-width: $size--1) {
+    padding: 0 15px 15px 15px;
+    width: 140px;
     top: -20px;
   }
 
@@ -181,6 +207,11 @@
     height: auto;
     margin-bottom: 20px;
   }
+
+  @media (max-width: $size--2) {
+    width: 80px;
+    height: auto;
+  }
 }
 
 .do-more__item-title {
@@ -194,6 +225,11 @@
 
   @media (max-width: $size--3) {
     font-size: 25px;
+    line-height: 15px;
+  }
+
+  @media (max-width: $size--2) {
+    font-size: 21px;
     line-height: 15px;
   }
 }
@@ -210,6 +246,11 @@
   @media (max-width: $size--3) {
     font-size: 12px;
     line-height: 20px;
+  }
+
+  @media (max-width: $size--2) {
+    font-size: 10px;
+    line-height: 16px;
   }
 }
 
@@ -231,12 +272,3 @@
     width: 0;
   }
 }
-// TODO
-// @keyframes item-animation {
-//   from {
-//     right: -100%;
-//   }
-//   to {
-//     right: 0;
-//   }
-// }

@@ -15,6 +15,17 @@
     height: 570px;
     margin-bottom: 30px;
   }
+
+  @media (max-width: $size--2) {
+    width: 100vw;
+    height: 570px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $size--1) {
+    width: 90vw;
+    height: 540px;
+  }
 }
 
 .block-animation--active {
@@ -138,6 +149,60 @@
     &--reporting {
       top: 160px;
       left: 0;
+    }
+  }
+
+  @media (max-width: $size--2) {
+    &--planning {
+      top: 0;
+      right: 159.5px;
+    }
+
+    &--monitoring {
+      top: 160px;
+      right: -20px;
+    }
+
+    &--managing {
+      bottom: 25px;
+      right: 50px;
+    }
+
+    &--controlling {
+      bottom: 25px;
+      left: 50px;
+    }
+
+    &--reporting {
+      top: 160px;
+      left: -20px;
+    }
+  }
+
+  @media (max-width: $size--1) {
+    &--planning {
+      top: 0;
+      right: 89.5px;
+    }
+
+    &--monitoring {
+      top: 160px;
+      right: -70px;
+    }
+
+    &--managing {
+      bottom: 25px;
+      right: -20px;
+    }
+
+    &--controlling {
+      bottom: 25px;
+      left: -20px;
+    }
+
+    &--reporting {
+      top: 160px;
+      left: -70px;
     }
   }
 }

@@ -24,13 +24,8 @@
     opacity: 0.1;
     border-radius: 50%;
 
-    @media (max-width: $size--4) {
-      left: 37%;
-    }
-
-    @media (max-width: $size--3) {
-      left: 33%;
-    }
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &::after {
@@ -41,13 +36,8 @@
     bottom: -25px;
     z-index: -1;
 
-    @media (max-width: $size--4) {
-      left: 35%;
-    }
-
-    @media (max-width: $size--3) {
-      left: 31%;
-    }
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
