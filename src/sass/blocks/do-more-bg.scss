@@ -8,6 +8,8 @@
 .do-more-bg__map {
   z-index: -1;
   position: relative;
+  width: 1600px;
+  height: 892px;
 
   @media (max-width: $size--8) {
     width: 90vw;

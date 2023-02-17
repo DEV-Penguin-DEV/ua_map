@@ -45,3 +45,30 @@
   @include margin-bottom(20px);
   margin-top: 55px;
 }
+
+.industry__img {
+  &--energy {
+    width: 133px;
+    height: 193px;
+  }
+
+  &--agriTech {
+    width: 150px;
+    height: 174px;
+  }
+
+  &--space {
+    width: 78px;
+    height: 210px;
+  }
+
+  &--medTech {
+    width: 150px;
+    height: 160px;
+  }
+
+  &--ci {
+    width: 170px;
+    height: 157px;
+  }
+}
