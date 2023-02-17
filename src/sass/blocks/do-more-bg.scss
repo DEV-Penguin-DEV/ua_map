@@ -28,58 +28,86 @@
   &--plant {
     top: 330px;
     left: 141px;
+    width: 80px;
+    height: 75px;
   }
   &--water-wall {
     top: 199px;
     left: 227px;
+    width: 90px;
+    height: 80px;
   }
   &--energy {
     top: 131px;
     left: 413px;
+    width: 60px;
+    height: 86px;
   }
   &--incubator {
     top: 303px;
     left: 385px;
+    width: 51px;
+    height: 80px;
   }
   &--servers {
     top: 244px;
     left: 538px;
+    width: 79px;
+    height: 100px;
   }
   &--building {
     top: 138px;
     left: 682px;
+    width: 76px;
+    height: 100px;
   }
   &--drone {
     top: 86px;
     left: 809px;
+    width: 100px;
+    height: 52px;
   }
   &--laser {
     top: 181px;
     right: 603px;
+    width: 59px;
+    height: 80px;
   }
   &--medTech {
     top: 325px;
     left: 778px;
+    width: 75px;
+    height: 80px;
   }
   &--agriTech {
     top: 337px;
     left: 653px;
+    width: 69px;
+    height: 80px;
   }
   &--chemistry {
     top: 448px;
     left: 716px;
+    width: 64px;
+    height: 70px;
   }
   &--truck {
     top: 425px;
     right: 673px;
+    width: 93px;
+    height: 80px;
   }
   &--atonomic {
     top: 313px;
     right: 552px;
+    width: 80px;
+    height: 74px;
   }
   &--battery {
     top: 491px;
     right: 592px;
+    width: 58px;
+    height: 64px;
   }
 
   @media (max-width: $size--8) {
