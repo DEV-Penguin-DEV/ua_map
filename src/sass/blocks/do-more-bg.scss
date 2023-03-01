@@ -3,6 +3,18 @@
   margin-top: 30px;
   width: min-content;
   position: relative;
+
+  @media (max-width: $size--2) {
+    order: 5;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: visible;
+    height: 125px;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .do-more-bg__map {
@@ -14,6 +26,10 @@
   @media (max-width: $size--8) {
     width: 90vw;
     height: auto;
+  }
+
+  @media (max-width: $size--2) {
+    display: none;
   }
 }
 
@@ -215,5 +231,11 @@
     &--battery {
       width: 4.15%;
     }
+  }
+
+  @media (max-width: $size--2) {
+    position: static;
+    height: 80px;
+    width: auto;
   }
 }

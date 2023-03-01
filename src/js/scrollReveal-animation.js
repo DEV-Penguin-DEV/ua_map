@@ -1,6 +1,7 @@
 import ScrollReveal from 'scrollreveal';
 const mediaQuery1024 = window.matchMedia('(min-width: 1024px)');
-const mediaQuery500 = window.matchMedia('(min-width: 500px)');
+const mobileSize = window.matchMedia('(max-width: 480px)');
+
 
 ScrollReveal().reveal('.industry', {
   reset: true,
@@ -28,12 +29,21 @@ ScrollReveal().reveal('.do-more-bg__map', {
   duration: 1500,
 });
 
-ScrollReveal().reveal('.do-more-bg__img', {
-  reset: true,
-  scale: 2,
-  duration: 1700,
-  delay: 600,
-});
+if (!mobileSize.matches) {
+  ScrollReveal().reveal('.do-more-bg__img', {
+    reset: true,
+    scale: 2,
+    duration: 1700,
+    delay: 600,
+  });
+} else {
+  ScrollReveal().reveal('.do-more-bg', {
+    reset: true,
+    scale: 2,
+    duration: 1700,
+    delay: 600,
+  });
+}
 
 ScrollReveal().reveal('.main-footer__container-animation', {
   reset: true,
@@ -68,7 +78,7 @@ ScrollReveal().reveal('.project-description__text', {
   duration: 2000,
 });
 
-if(mediaQuery1024.matches) {
+if (mediaQuery1024.matches) {
   ScrollReveal().reveal('.about__text', {
     reset: true,
     origin: 'right',
@@ -104,7 +114,7 @@ ScrollReveal().reveal('.do-more__button', {
   duration: 1500,
 });
 
-if (mediaQuery500.matches) {
+if (!mobileSize.matches) {
   ScrollReveal().reveal('.offer__title', {
     reset: true,
     origin: 'left',

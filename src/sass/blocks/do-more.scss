@@ -2,6 +2,23 @@
   padding: 150px 0;
   margin-bottom: 0;
   overflow: hidden;
+
+  @media (max-width: $size--2) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.do-more__title {
+  @media (max-width: $size--2) {
+    order: 0;
+  }
+}
+
+.do-more__text-title {
+  @media (max-width: $size--2) {
+    order: 1;
+  }
 }
 
 .do-more__text-title {
@@ -26,7 +43,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 60px;
+    order: 2;
+    margin-bottom: 112px;
   }
 }
 
@@ -110,6 +129,11 @@
     background: linear-gradient(180deg, #003fde 0%, #250ec1 100%);
     box-shadow: 0px 10px 10px rgba(0, 71, 255, 0.4);
   }
+
+  @media (max-width: $size--2) {
+    order: 3;
+    margin-bottom: 60px;
+  }
 }
 
 .do-more__list {
@@ -117,6 +141,11 @@
   @include list-none;
   position: relative;
   margin: 0 auto;
+
+  @media (max-width: $size--2) {
+    width: 100%;
+    order: 4;
+  }
 }
 
 .do-more__item {
@@ -176,20 +205,24 @@
   }
 
   @media (max-width: $size--2) {
-    padding: 0 20px 20px 20px;
-    width: 160px;
-    top: -20px;
-  }
+    height: 691px;
+    width: 100vw;
+    position: relative;
+    padding: 80px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    right: 0;
 
-  @media (max-width: $size--1) {
-    padding: 0 15px 15px 15px;
-    width: 140px;
-    top: -20px;
+    &::before {
+      height: 100%;
+    }
   }
 
   &--active {
-    right: 0;
-    transition: 1s;
+    @media (min-width: $size--2) {
+      right: 0;
+      transition: 1s;
+    }
   }
 }
 
@@ -211,8 +244,11 @@
   }
 
   @media (max-width: $size--2) {
-    width: 80px;
+    width: 40%;
     height: auto;
+    order: 1;
+    margin-bottom: 40px;
+    padding: 0 20px;
   }
 }
 
@@ -231,8 +267,10 @@
   }
 
   @media (max-width: $size--2) {
-    font-size: 21px;
-    line-height: 15px;
+    font-size: 40px;
+    line-height: 25px;
+    margin-bottom: 150px;
+    order: 0;
   }
 }
 
@@ -251,8 +289,10 @@
   }
 
   @media (max-width: $size--2) {
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0 20px;
+    order: 2;
   }
 }
 

@@ -107,6 +107,10 @@
     );
     opacity: 0.8;
     filter: blur(25px);
+
+    @media (max-width: $size--2) {
+      display: none;
+    }
   }
 
   &--5 {
@@ -135,6 +139,10 @@
       height: 1000px;
       top: 200px;
       right: -287px;
+    }
+
+    @media (max-width: $size--2) {
+      display: none;
     }
   }
 
