@@ -120,18 +120,20 @@
 
 .project-description__title {
   font-weight: 600;
+  width: 80%;
   font-size: 45px;
   line-height: 75px;
   /* or 167% */
 
-  text-align: center;
+  margin: 0 auto;
   text-transform: uppercase;
 
   color: #ffffff;
-  @include margin-bottom(30px);
+  margin-bottom: 30px;
 }
 
 .project-description__text {
+  width: 80%;
   max-width: 980px;
   margin: 0 auto;
 

@@ -1,78 +1,79 @@
 import ScrollReveal from 'scrollreveal';
 const mediaQuery1024 = window.matchMedia('(min-width: 1024px)');
-const mobileSize = window.matchMedia('(max-width: 480px)');
+const mobileSize = window.matchMedia('(max-width: 768px)');
 
 
 ScrollReveal().reveal('.industry', {
-  reset: true,
+  reset: false,
   scale: 1.4,
   duration: 1500,
 });
 
 ScrollReveal().reveal('.title--animation', {
-  reset: true,
+  reset: false,
   distance: '350px',
   origin: 'left',
   duration: 1000,
 });
 
 ScrollReveal().reveal('.title--text', {
-  reset: true,
+  reset: false,
   distance: '350px',
   origin: 'right',
   duration: 1000,
 });
 
 ScrollReveal().reveal('.do-more-bg__map', {
-  reset: true,
+  reset: false,
   scale: 1.4,
   duration: 1500,
 });
 
 if (!mobileSize.matches) {
   ScrollReveal().reveal('.do-more-bg__img', {
-    reset: true,
+    reset: false,
     scale: 2,
     duration: 1700,
     delay: 600,
   });
 } else {
-  ScrollReveal().reveal('.do-more-bg', {
-    reset: true,
-    scale: 2,
-    duration: 1700,
+  ScrollReveal().reveal('.do-more-bg--mobile', {
+    reset: false,
+    distance: '100px',
+    origin: 'down',
+    duration: 1500,
     delay: 600,
   });
 }
 
 ScrollReveal().reveal('.main-footer__container-animation', {
-  reset: true,
+  reset: false,
   origin: 'bottom',
   distance: '500px',
   duration: 1500,
 });
 
 ScrollReveal().reveal('.first-screen__logo', {
-  reset: true,
+  reset: false,
   scale: 1.4,
   duration: 2500,
 });
 
 ScrollReveal().reveal('.first-screen__text', {
-  reset: true,
+  reset: false,
   origin: 'bottom',
   distance: '300px',
   duration: 2500,
 });
 
 ScrollReveal().reveal('.project-description__title', {
-  reset: true,
+  reset: false,
   scale: 1.4,
   duration: 1500,
 });
 
 ScrollReveal().reveal('.project-description__text', {
-  reset: true,
+  reset: false,
   origin: 'bottom',
   distance: '150px',
   duration: 2000,
@@ -80,21 +81,21 @@ ScrollReveal().reveal('.project-description__text', {
 
 if (mediaQuery1024.matches) {
   ScrollReveal().reveal('.about__text', {
-    reset: true,
+    reset: false,
     origin: 'right',
     distance: '300px',
     duration: 1500,
   });
 } else {
   ScrollReveal().reveal('.about__text--1', {
-    reset: true,
+    reset: false,
     origin: 'left',
     distance: '300px',
     duration: 2500,
   });
 
   ScrollReveal().reveal('.about__text--2', {
-    reset: true,
+    reset: false,
     origin: 'right',
     distance: '300px',
     duration: 2500,
@@ -102,13 +103,13 @@ if (mediaQuery1024.matches) {
 }
 
 ScrollReveal().reveal('.do-more__menu-item', {
-  reset: true,
+  reset: false,
   scale: 1.6,
   duration: 1700,
 });
 
 ScrollReveal().reveal('.do-more__button', {
-  reset: true,
+  reset: false,
   origin: 'bottom',
   distance: '200px',
   duration: 1500,
@@ -116,21 +117,21 @@ ScrollReveal().reveal('.do-more__button', {
 
 if (!mobileSize.matches) {
   ScrollReveal().reveal('.offer__title', {
-    reset: true,
+    reset: false,
     origin: 'left',
     distance: '200px',
     duration: 1500,
   });
 
   ScrollReveal().reveal('.offer__opportunity', {
-    reset: true,
+    reset: false,
     origin: 'top',
     distance: '200px',
     duration: 1500,
   });
 
   ScrollReveal().reveal('.offer__price-animation-container', {
-    reset: true,
+    reset: false,
     origin: 'bottom',
     distance: '200px',
     duration: 1500,
@@ -139,7 +140,7 @@ if (!mobileSize.matches) {
 
 
 ScrollReveal().reveal('.pmo', {
-  reset: true,
+  reset: false,
   scale: 1.5,
   duration: 1500,
 });

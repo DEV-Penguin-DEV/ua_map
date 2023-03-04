@@ -3,26 +3,29 @@
   margin-bottom: 0;
   overflow: hidden;
 
-  @media (max-width: $size--2) {
+  @media (max-width: $size--3) {
     display: flex;
     flex-direction: column;
+    padding: 75px 0;
   }
+
 }
 
 .do-more__title {
-  @media (max-width: $size--2) {
+  @media (max-width: $size--3) {
     order: 0;
   }
 }
 
 .do-more__text-title {
-  @media (max-width: $size--2) {
+  @media (max-width: $size--3) {
     order: 1;
   }
 }
 
 .do-more__text-title {
-  @include margin-bottom(50px);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .do-more__menu-list {
@@ -38,7 +41,7 @@
     width: 90vw;
   }
 
-  @media (max-width: $size--2) {
+  @media (max-width: $size--3) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +63,7 @@
     width: min-content;
   }
 
-  @media (max-width: $size--2) {
+  @media (max-width: $size--3) {
     width: auto;
     max-width: 80%;
   }
@@ -130,7 +133,7 @@
     box-shadow: 0px 10px 10px rgba(0, 71, 255, 0.4);
   }
 
-  @media (max-width: $size--2) {
+  @media (max-width: $size--3) {
     order: 3;
     margin-bottom: 60px;
   }
@@ -142,7 +145,7 @@
   position: relative;
   margin: 0 auto;
 
-  @media (max-width: $size--2) {
+  @media (max-width: $size--3) {
     width: 100%;
     order: 4;
   }
@@ -200,11 +203,8 @@
 
   @media (max-width: $size--3) {
     padding: 0 20px 40px 20px;
-    width: 255px;
+    width: 200px;
     top: -20px;
-  }
-
-  @media (max-width: $size--2) {
     height: 691px;
     width: 100vw;
     position: relative;
@@ -219,7 +219,7 @@
   }
 
   &--active {
-    @media (min-width: $size--2) {
+    @media (min-width: $size--3) {
       right: 0;
       transition: 1s;
     }
@@ -243,7 +243,7 @@
     margin-bottom: 20px;
   }
 
-  @media (max-width: $size--2) {
+  @media (max-width: $size--3) {
     width: 40%;
     height: auto;
     order: 1;
@@ -262,11 +262,6 @@
   @include margin-bottom(20px);
 
   @media (max-width: $size--3) {
-    font-size: 25px;
-    line-height: 15px;
-  }
-
-  @media (max-width: $size--2) {
     font-size: 40px;
     line-height: 25px;
     margin-bottom: 150px;
@@ -284,11 +279,6 @@
   margin: 0;
 
   @media (max-width: $size--3) {
-    font-size: 12px;
-    line-height: 20px;
-  }
-
-  @media (max-width: $size--2) {
     font-size: 15px;
     line-height: 25px;
     padding: 0 20px;

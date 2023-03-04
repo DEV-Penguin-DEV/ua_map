@@ -16,25 +16,34 @@
     margin-bottom: 30px;
   }
 
+  @media (max-width: $size--3) {
+    width: 505px;
+    height: 530px;
+  }
+
   @media (max-width: $size--2) {
-    width: 100vw;
-    height: 570px;
+    width: 90vw;
+    height: 510px;
     margin-bottom: 30px;
   }
 
   @media (max-width: $size--1) {
-    width: 90vw;
-    height: 540px;
+    width: 85vw;
+    height: 500px;
   }
 }
 
 .block-animation--active {
   & .pmo__decor-container {
-    animation: pmo-list-animation linear 8s infinite forwards;
+    @media (min-width: $size--3) {
+      animation: pmo-list-animation linear 12s infinite forwards;
+    }
   }
 
   & .pmo__item {
-    animation: pmo-list-animation-1 linear 8s infinite forwards;
+    @media (min-width: $size--3) {
+      animation: pmo-list-animation-1 linear 12s infinite forwards;
+    }
   }
 
   // Animations
@@ -63,6 +72,14 @@
   top: 0;
   left: 0;
   background: url("./../../public/img/pmo-bg.svg") no-repeat center center;
+
+  @media (max-width: $size--3) {
+    background-size: 340px;
+  }
+
+  @media (max-width: $size--2) {
+    height: 90%;
+  }
 }
 
 .pmo__tilte {
@@ -73,6 +90,11 @@
 
   color: #fdcd24;
   margin: 0;
+
+  @media (max-width: $size--2) {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .pmo__under-title {
@@ -86,6 +108,11 @@
 
   color: #fdcd24;
   margin: 0;
+
+  @media (max-width: $size--2) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .pmo__title-container {
@@ -152,10 +179,37 @@
     }
   }
 
+  @media (max-width: $size--3) {
+    &--planning {
+      top: 0;
+      right: 165.5px;
+    }
+
+    &--monitoring {
+      top: 155px;
+      right: 0;
+    }
+
+    &--managing {
+      bottom: 25px;
+      right: 80px;
+    }
+
+    &--controlling {
+      bottom: 25px;
+      left: 80px;
+    }
+
+    &--reporting {
+      top: 155px;
+      left: 0;
+    }
+  }
+
   @media (max-width: $size--2) {
     &--planning {
       top: 0;
-      right: 159.5px;
+      right: 140.5px;
     }
 
     &--monitoring {
@@ -186,23 +240,23 @@
     }
 
     &--monitoring {
-      top: 160px;
-      right: -70px;
+      top: 124px;
+      right: -40px;
     }
 
     &--managing {
       bottom: 25px;
-      right: -20px;
+      right: 10px;
     }
 
     &--controlling {
       bottom: 25px;
-      left: -20px;
+      left: 10px;
     }
 
     &--reporting {
-      top: 160px;
-      left: -70px;
+      top: 124px;
+      left: -40px;
     }
   }
 }
@@ -210,4 +264,9 @@
 .pmo__img {
   width: 160px;
   height: 160px;
+
+  @media (max-width: $size--2) {
+    width: 120px;
+    height: 120px;
+  }
 }

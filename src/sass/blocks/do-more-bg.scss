@@ -4,16 +4,76 @@
   width: min-content;
   position: relative;
 
-  @media (max-width: $size--2) {
-    order: 5;
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: visible;
-    height: 125px;
-    align-items: center;
-    gap: 50px;
+  &--desktop {
+    @media (max-width: $size--3) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+
+    @media (max-width: $size--3) {
+      display: block;
+      height: 140px;
+    }
+
+    & .do-more-bg__img--plant {
+      width: 80px;
+      height: 75px;
+    }
+    & .do-more-bg__img--water-wall {
+      width: 90px;
+      height: 80px;
+    }
+    & .do-more-bg__img--energy {
+      width: 60px;
+      height: 86px;
+    }
+    & .do-more-bg__img--incubator {
+      width: 51px;
+      height: 80px;
+    }
+    & .do-more-bg__img--servers {
+      width: 79px;
+      height: 100px;
+    }
+    & .do-more-bg__img--building {
+      width: 76px;
+      height: 100px;
+    }
+    & .do-more-bg__img--drone {
+      width: 100px;
+      height: 52px;
+    }
+    & .do-more-bg__img--laser {
+      width: 59px;
+      height: 80px;
+    }
+    & .do-more-bg__img--medTech {
+      width: 75px;
+      height: 80px;
+    }
+    & .do-more-bg__img--agriTech {
+      width: 69px;
+      height: 80px;
+    }
+    & .do-more-bg__img--chemistry {
+      width: 64px;
+      height: 70px;
+    }
+    & .do-more-bg__img--truck {
+      width: 93px;
+      height: 80px;
+    }
+    & .do-more-bg__img--atonomic {
+      width: 80px;
+      height: 74px;
+    }
+    & .do-more-bg__img--battery {
+      width: 58px;
+      height: 64px;
+    }
   }
 }
 
@@ -28,7 +88,7 @@
     height: auto;
   }
 
-  @media (max-width: $size--2) {
+  @media (max-width: $size--3) {
     display: none;
   }
 }
@@ -232,10 +292,18 @@
       width: 4.15%;
     }
   }
+}
 
-  @media (max-width: $size--2) {
+.swiper-slide {
+  & img {
     position: static;
-    height: 80px;
-    width: auto;
   }
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.container-slider {
+  order: 4;
 }
