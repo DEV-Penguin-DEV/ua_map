@@ -11,10 +11,10 @@
   }
 
   &--mobile {
-    display: none;
+    display: none !important;
 
     @media (max-width: $size--3) {
-      display: block;
+      display: block !important;
       height: 140px;
     }
 

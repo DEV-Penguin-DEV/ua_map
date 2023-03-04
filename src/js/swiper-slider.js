@@ -5,7 +5,7 @@ import 'swiper/css';
 
 const swiper = new Swiper('.swiper', {
   loop: true,
-  slidesPerView: 5,
+  slidesPerView: 4,
   spaceBetween: 60,
 });
 
