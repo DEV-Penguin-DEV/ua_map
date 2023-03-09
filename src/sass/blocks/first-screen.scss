@@ -1,5 +1,5 @@
 .first-screen {
-  padding-top: 180px;
+  padding-top: 140px;
   padding-bottom: 132px;
   min-height: 1170px;
   box-sizing: border-box;
@@ -7,16 +7,16 @@
   z-index: 2;
   position: relative;
 
+  @media (max-width: $size--6) {
+    padding-top: 95px;
+  }
+
   @media (max-width: $size--4) {
     background-position-y: 100px;
     background-size: 120%;
     min-height: max-content;
     padding-bottom: 110px;
-    padding-top: 14px;
-  }
-
-  @media (max-width: $size--6) {
-    padding-top: 115px;
+    padding-top: 80px;
   }
 
   @media (max-width: $size--3) {
@@ -45,18 +45,18 @@
 .first-screen__bg {
   position: absolute;
   z-index: -1;
-  top: 45%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
 
   @media (max-width: $size--6) {
-    top: 38%;
+    top: 32%;
     width: 80%;
   }
 
   @media (max-width: $size--5) {
-    top: 27%;
+    top: 25%;
   }
 
   @media (max-width: $size--4) {
@@ -84,9 +84,14 @@
 
 .first-screen__logo {
   margin-bottom: 50.6px;
+  width: 70vw;
 
-  @media (max-width: $size--6) {
-    width: 70vw;
+  @media (max-width: $size--5) {
+    width: 60vw;
+  }
+
+  @media (max-width: $size--5) {
+    margin-bottom: 40px;
   }
 
   @media (max-width: $size--3) {
@@ -96,19 +101,25 @@
 
 .first-screen__text {
   font-weight: 400;
-  font-size: 32px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 26px;
   /* or 94% */
 
   text-align: center;
 
   color: #e5e7fa;
-  @include margin-bottom(180px);
+  @include margin-bottom(160px);
 
   @media (max-width: $size--6) {
     margin-bottom: 140px;
     font-size: 24px;
     line-height: 22px;
+  }
+
+  @media (max-width: $size--4) {
+    margin-bottom: 80px;
+    font-size: 20px;
+    line-height: 18px;
   }
 
   @media (max-width: $size--3) {
@@ -137,6 +148,11 @@
 
   color: #ffffff;
   margin-bottom: 30px;
+
+  @media (max-width: $size--5) {
+    font-size: 35px;
+    line-height: 60px;
+  }
 }
 
 .project-description__text {

@@ -69,6 +69,7 @@
 }
 
 .do-more__menu-button {
+  text-decoration: none;
   @include button-none;
   font-weight: 700;
   font-size: 25px;
@@ -124,6 +125,7 @@
   box-shadow: 0px 10px 10px rgba(0, 71, 255, 0.25);
   margin: 0 auto;
   cursor: pointer;
+  margin-top: 30px;
   transition: 0.5s;
 
   &:hover {
