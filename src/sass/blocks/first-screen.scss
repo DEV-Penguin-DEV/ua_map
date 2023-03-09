@@ -149,9 +149,29 @@
   color: #ffffff;
   margin-bottom: 30px;
 
+  @media (max-width: $size--6) {
+    font-size: 40px;
+    line-height: 65px;
+  }
+
   @media (max-width: $size--5) {
     font-size: 35px;
     line-height: 60px;
+  }
+
+  @media (max-width: $size--4) {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  @media (max-width: $size--3) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (max-width: $size--2) {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
