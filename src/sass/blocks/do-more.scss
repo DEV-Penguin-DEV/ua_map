@@ -156,11 +156,11 @@
 
 .do-more__item {
   padding: 0 50px 100px 50px;
-  width: 550px;
+  width: 28vw;
   box-sizing: border-box;
   position: absolute;
   right: -70vw;
-  top: 117px;
+  top: 75px;
   z-index: 1;
   transition: 1s;
 
@@ -185,28 +185,18 @@
     z-index: -2;
   }
 
-  @media (max-width: $size--8) {
-    width: 475px;
-  }
-
-  @media (max-width: $size--6) {
-    width: 425px;
-  }
-
   @media (max-width: $size--5) {
     padding: 0 35px 80px 35px;
-    width: 400px;
+    top: 50px;
   }
 
   @media (max-width: $size--4) {
     padding: 0 35px 60px 35px;
-    width: 300px;
-    top: 35px;
+    top: 50px;
   }
 
   @media (max-width: $size--3) {
     padding: 0 20px 40px 20px;
-    width: 200px;
     top: -20px;
     height: fit-content;
     width: 100vw;
@@ -223,7 +213,7 @@
 
   &--active {
     @media (min-width: $size--3) {
-      right: 0;
+      right: 7vw;
       transition: 1s;
     }
   }

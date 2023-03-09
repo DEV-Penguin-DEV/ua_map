@@ -21,11 +21,6 @@ const onMapIcon = (mapIcon) => {
   block.classList.add('do-more__item--active');
 };
 
-const onMapIconUnHover = () => {
-  const block = document.querySelector('.do-more__item');
-  block.classList.remove('do-more__item--active');
-};
-
 export const startMap = () => {
   if (mediaQuery1024.matches) {
     onMapIcon(mapIcons[0]);
@@ -33,7 +28,6 @@ export const startMap = () => {
   mapIcons.forEach((mapIcon) => {
     if (mediaQuery1024.matches) {
       mapIcon.addEventListener('mouseover', () => onMapIcon(mapIcon));
-      mapIcon.addEventListener('mouseout', onMapIconUnHover);
     } else {
       mapIcon.addEventListener('click', () => onMapIcon(mapIcon));
     }

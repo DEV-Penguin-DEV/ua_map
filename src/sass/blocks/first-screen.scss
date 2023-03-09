@@ -1,7 +1,6 @@
 .first-screen {
   padding-top: 140px;
   padding-bottom: 132px;
-  min-height: 1170px;
   box-sizing: border-box;
   text-align: center;
   z-index: 2;
@@ -50,13 +49,17 @@
   transform: translate(-50%, -50%);
   width: 90%;
 
+  @media (max-width: $size--7) {
+    width: 65%;
+  }
+
   @media (max-width: $size--6) {
-    top: 32%;
-    width: 80%;
+    top: 38%;
+    width: 65%;
   }
 
   @media (max-width: $size--5) {
-    top: 25%;
+    top: 35%;
   }
 
   @media (max-width: $size--4) {
@@ -86,12 +89,24 @@
   margin-bottom: 50.6px;
   width: 70vw;
 
-  @media (max-width: $size--5) {
+  @media (max-width: $size--7) {
+    width: 60vw;
+  }
+
+  @media (max-width: $size--6) {
     width: 60vw;
   }
 
   @media (max-width: $size--5) {
+    width: 50vw;
+  }
+
+  @media (max-width: $size--5) {
     margin-bottom: 40px;
+  }
+
+  @media (max-width: $size--4) {
+    width: 50vw;
   }
 
   @media (max-width: $size--3) {
