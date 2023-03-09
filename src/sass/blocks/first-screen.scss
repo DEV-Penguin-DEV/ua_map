@@ -59,16 +59,21 @@
   }
 
   @media (max-width: $size--5) {
-    top: 35%;
+    top: 30%;
   }
 
   @media (max-width: $size--4) {
-    top: 35%;
+    top: 28%;
+    width: 70%;
+  }
+
+  @media (max-width: $size--3) {
+    top: 25%;
+    width: 80%;
   }
 
   @media (max-width: $size--2) {
-    top: 18%;
-    width: 100%;
+    top: 20%;
   }
 
   @media (max-width: $size--1) {
@@ -94,7 +99,7 @@
   }
 
   @media (max-width: $size--6) {
-    width: 60vw;
+    width: 55vw;
   }
 
   @media (max-width: $size--5) {
@@ -141,6 +146,9 @@
     margin-bottom: 70px;
     font-size: 18px;
     line-height: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (max-width: $size--2) {
