@@ -44,10 +44,20 @@
 .first-screen__bg {
   position: absolute;
   z-index: -1;
-  top: 35%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 80%;
+
+  @media (max-width: $size--10) {
+    width: 75%;
+    top: 55%;
+  }
+
+  @media (max-width: $size--9) {
+    width: 80%;
+    top: 47%;
+  }
 
   @media (max-width: $size--8) {
     width: 75%;
