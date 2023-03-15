@@ -1,13 +1,76 @@
 .main-header {
   display: flex;
   justify-content: space-between;
-  padding: 25px 0 20px 0;
+  padding: 25px 20px 20px 20px;
+  align-items: center;
+
+  @media (max-width: $size--3) {
+    padding: 25px 10px 20px 10px;
+  }
+
+  @media (max-width: $size--1) {
+    padding: 25px 0px 20px 0px;
+  }
+}
+
+.main-header__email {
+  color: #ffffff;
+  margin-right: 5.8vw;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  transition: 0.85s;
+
+  &::before {
+    @include defaul-pseudo-element(0px, 3px);
+    transition: 0.85s;
+    bottom: -5px;
+    left: 50%;
+    background-color: #fdcd24;
+    transition: 0.85s;
+
+    @media (max-width: $size--2) {
+      bottom: 1px;
+      height: 2px;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.15);
+    transition: 0.85s;
+
+    &::before {
+      width: 100%;
+      left: 0;
+      transition: 0.85s;
+    }
+  }
+
+  @media (max-width: $size--3) {
+    margin-right: 3.8vw;
+  }
+
+  @media (max-width: $size--2) {
+    font-size: 14px;
+  }
+
+  @media (max-width: $size--1) {
+    font-size: 12px;
+  }
 }
 
 .main-header__logo {
-  margin-left: 7.8vw;
+  margin-left: 5.8vw;
   width: 192px;
   height: 40px;
+
+  @media (max-width: $size--3) {
+    margin-left: 3.8vw;
+  }
 }
 
 .main-header__languages-settings {
