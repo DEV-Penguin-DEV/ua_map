@@ -34,7 +34,7 @@
     transition: 0.85s;
 
     @media (max-width: $size--2) {
-      bottom: 1px;
+      bottom: -4px;
       height: 2px;
     }
   }
@@ -71,8 +71,24 @@
   @media (max-width: $size--3) {
     margin-left: 3.8vw;
   }
+
+  @media (max-width: $size--2) {
+    width: 150px;
+    height: auto;
+  }
 }
 
 .main-header__languages-settings {
   margin-right: 30px;
+}
+
+.main-header__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-end;
+
+  @media (max-width: $size--2) {
+    gap: 15px;
+  }
 }

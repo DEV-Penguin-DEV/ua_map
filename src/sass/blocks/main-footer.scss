@@ -24,6 +24,7 @@
     width: 180px;
     height: auto;
   }
+  justify-self: flex-end;
 }
 
 .main-footer__container {
@@ -34,13 +35,9 @@
 
   &-animation {
     display: flex;
-    justify-content: space-between;
-
-    @media (max-width: $size--3) {
-      flex-direction: column;
-      gap: 35px;
-      align-items: center;
-    }
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
   }
 
   &::before {
@@ -48,6 +45,24 @@
     top: 0;
     left: 50%;
     background-color: #2f0dff;
+  }
+}
+
+.main-footer__top-part {
+  display: flex;
+
+  gap: 10px;
+  align-items: flex-end;
+  justify-items: center;
+  width: 100%;
+
+  @media (max-width: $size--3) {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+
+    justify-content: center;
   }
 }
 
@@ -62,6 +77,7 @@
   @media (max-width: $size--3) {
     order: 3;
   }
+  justify-self: flex-start;
 }
 
 // Animiations
@@ -76,6 +92,61 @@
   }
 }
 
+.main-footer__contact {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+
+  & a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    transition: 0.85s;
+
+    &::before {
+      @include defaul-pseudo-element(0px, 3px);
+      transition: 0.85s;
+      bottom: -5px;
+      left: 50%;
+      background-color: #fdcd24;
+      transition: 0.85s;
+
+      @media (max-width: $size--2) {
+        bottom: 1px;
+        height: 2px;
+      }
+    }
+    &:hover {
+      transform: scale(1.15);
+      transition: 0.85s;
+
+      &::before {
+        width: 100%;
+        left: 0;
+        transition: 0.85s;
+      }
+    }
+
+    @media (max-width: $size--2) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $size--1) {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: $size--4) {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}
 .main-footer__social-media {
   display: block;
   width: fit-content;
@@ -90,4 +161,42 @@
 .main-footer__social-media-icon {
   width: 32px;
   height: 32px;
+}
+
+.main-footer__author {
+  display: flex;
+}
+
+.main-footer__author-link {
+  margin-left: 10px;
+  color: #fdcd24;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  transition: 0.85s;
+
+  &::before {
+    @include defaul-pseudo-element(0px, 3px);
+    transition: 0.85s;
+    bottom: -5px;
+    left: 50%;
+    background-color: #fdcd24;
+    transition: 0.85s;
+
+    @media (max-width: $size--2) {
+      bottom: 1px;
+      height: 1px;
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.85s;
+
+    &::before {
+      width: 100%;
+      left: 0;
+      transition: 0.85s;
+    }
+  }
 }
