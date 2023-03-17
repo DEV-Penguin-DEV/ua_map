@@ -36,8 +36,13 @@
   &-animation {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    align-items: center;
+    gap: 0px;
+    align-items: flex-start;
+
+    @media (max-width: $size--3) {
+      gap: 20px;
+      align-items: center;
+    }
   }
 
   &::before {

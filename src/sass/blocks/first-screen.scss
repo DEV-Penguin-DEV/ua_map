@@ -1,13 +1,25 @@
 .first-screen {
-  padding-top: 140px;
+  padding-top: 255px;
   padding-bottom: 132px;
   box-sizing: border-box;
   text-align: center;
   z-index: 2;
   position: relative;
 
+  @media (max-width: $size--8) {
+    padding-top: 265px;
+  }
+
+  @media (max-width: $size--7) {
+    padding-top: 240px;
+  }
+
   @media (max-width: $size--6) {
-    padding-top: 95px;
+    padding-top: 170px;
+  }
+
+  @media (max-width: $size--5) {
+    padding-top: 170px;
   }
 
   @media (max-width: $size--4) {
@@ -15,13 +27,97 @@
     background-size: 120%;
     min-height: max-content;
     padding-bottom: 110px;
-    padding-top: 80px;
+    padding-top: 140px;
   }
 
   @media (max-width: $size--3) {
     padding-top: 65px;
   }
 }
+
+.scroll-text {
+  @include centering-width-pseudo-element();
+  position: absolute;
+  font-size: 20px;
+  font-weight: 300;
+  top: 80vh;
+  animation: toScroll 3s forwards infinite;
+  cursor: pointer;
+  height: 70px;
+
+  &::before {
+    @include defaul-pseudo-element(2px, 40px);
+    @include centering-width-pseudo-element();
+    background-color: #ffffff;
+    bottom: 0px;
+  }
+
+  @media (max-width: $size--3) {
+    display: none;
+  }
+  @media (max-width: $size--5) {
+    top: 60vh;
+    animation-name: toScroll--size-3;
+  }
+  @media (max-width: $size--7) {
+    top: 70vh;
+    animation-name: toScroll--size-7;
+  }
+}
+
+@keyframes toScroll {
+  from {
+    top: 80vh;
+  }
+  50% {
+    top: 82vh;
+  }
+  100% {
+    top: 80vh;
+  }
+}
+
+@keyframes toScroll--size-3 {
+  from {
+    top: 60vh;
+  }
+  50% {
+    top: 62vh;
+  }
+  100% {
+    top: 60vh;
+  }
+}
+
+@keyframes toScroll--size-7 {
+  from {
+    top: 70vh;
+  }
+  50% {
+    top: 72vh;
+  }
+  100% {
+    top: 70vh;
+  }
+}
+
+// .scrollSvg {
+//   position: absolute;
+//   width: 80px;
+//   height: 0;
+//   top: 55%;
+//   animation: toScroll 2s infinite;
+//   @include centering-width-pseudo-element();
+
+//   @keyframes toScroll {
+//     from {
+//       height: 0;
+//     }
+//     to {
+//       height: 150px;
+//     }
+//   }
+// }
 
 .block-animation--active {
   & svg {
@@ -44,38 +140,37 @@
 .first-screen__bg {
   position: absolute;
   z-index: -1;
-  top: 45%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 75%;
 
   @media (max-width: $size--10) {
-    width: 75%;
-    top: 55%;
+    top: 33%;
   }
 
   @media (max-width: $size--9) {
     width: 80%;
-    top: 47%;
+    top: 33%;
   }
 
   @media (max-width: $size--8) {
     width: 75%;
-    top: 42%;
+    top: 37%;
   }
 
   @media (max-width: $size--7) {
     width: 70%;
-    top: 40%;
+    top: 35%;
   }
 
   @media (max-width: $size--6) {
-    top: 38%;
+    top: 33%;
     width: 65%;
   }
 
   @media (max-width: $size--5) {
-    top: 30%;
+    top: 31%;
   }
 
   @media (max-width: $size--4) {
@@ -88,8 +183,13 @@
     width: 80%;
   }
 
-  @media (max-width: $size--2) {
+  @media (max-width: 650px) {
     top: 20%;
+    width: 80%;
+  }
+
+  @media (max-width: $size--2) {
+    top: 15%;
   }
 
   @media (max-width: $size--1) {
@@ -144,28 +244,38 @@
   text-align: center;
 
   color: #e5e7fa;
-  @include margin-bottom(220px);
+  @include margin-bottom(500px);
+
+  @media (max-width: $size--8) {
+    margin-bottom: 440px;
+  }
 
   @media (max-width: $size--7) {
-    margin-bottom: 210px;
+    margin-bottom: 440px;
     font-size: 24px;
     line-height: 22px;
   }
 
   @media (max-width: $size--6) {
-    margin-bottom: 180px;
+    margin-bottom: 370px;
     font-size: 24px;
     line-height: 22px;
   }
 
+  @media (max-width: $size--5) {
+    margin-bottom: 350px;
+    font-size: 20px;
+    line-height: 18px;
+  }
+
   @media (max-width: $size--4) {
-    margin-bottom: 150px;
+    margin-bottom: 330px;
     font-size: 20px;
     line-height: 18px;
   }
 
   @media (max-width: $size--3) {
-    margin-bottom: 140px;
+    margin-bottom: 170px;
     font-size: 18px;
     line-height: 20px;
     max-width: 80%;
@@ -182,10 +292,11 @@
 }
 
 .project-description__title {
-  font-weight: 600;
+  font-weight: 500;
   width: 80%;
   font-size: 45px;
   line-height: 75px;
+  letter-spacing: 0.5mm;
   /* or 167% */
 
   margin: 0 auto;

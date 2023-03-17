@@ -28,3 +28,20 @@
   width: $width;
   height: $height;
 }
+
+@mixin centering-pseudo-element() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin centering-hight-pseudo-element() {
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+@mixin centering-width-pseudo-element() {
+  left: 50%;
+  transform: translateX(-50%);
+}

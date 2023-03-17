@@ -85,10 +85,10 @@
 .main-header__contact {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
   align-items: flex-end;
 
   @media (max-width: $size--2) {
-    gap: 15px;
+    gap: 10px;
   }
 }
