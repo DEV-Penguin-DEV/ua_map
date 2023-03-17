@@ -250,7 +250,7 @@
 .do-more__item-title {
   font-weight: 900;
   font-size: 35px;
-  line-height: 25px;
+  line-height: 35px;
   /* identical to box height, or 71% */
 
   color: #ffffff;
@@ -258,7 +258,7 @@
 
   @media (max-width: $size--3) {
     font-size: 40px;
-    line-height: 25px;
+    line-height: 40px;
     margin-bottom: 150px;
     order: 0;
   }
