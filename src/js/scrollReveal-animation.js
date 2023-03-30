@@ -7,6 +7,7 @@ ScrollReveal().reveal('.industry', {
   reset: false,
   scale: 1.4,
   duration: 1500,
+  viewFactor: -1,
 });
 
 ScrollReveal().reveal('.title--animation', {
@@ -14,6 +15,7 @@ ScrollReveal().reveal('.title--animation', {
   distance: '350px',
   origin: 'left',
   duration: 1000,
+  viewFactor: -1,
 });
 
 ScrollReveal().reveal('.title--text', {
@@ -21,12 +23,14 @@ ScrollReveal().reveal('.title--text', {
   distance: '350px',
   origin: 'right',
   duration: 1000,
+  viewFactor: -1,
 });
 
 ScrollReveal().reveal('.do-more-bg__map', {
   reset: false,
   scale: 1.4,
   duration: 1500,
+  viewFactor: -1,
 });
 
 if (!mobileSize.matches) {
@@ -35,14 +39,16 @@ if (!mobileSize.matches) {
     scale: 2,
     duration: 1700,
     delay: 600,
+    viewFactor: -1,
   });
 } else {
   ScrollReveal().reveal('.do-more-bg--mobile', {
     reset: false,
     distance: '100px',
-    origin: 'down',
+    origin: 'bottom',
     duration: 1500,
     delay: 600,
+    viewFactor: -1,
   });
 }
 
@@ -51,12 +57,14 @@ ScrollReveal().reveal('.main-footer__container-animation', {
   origin: 'bottom',
   distance: '500px',
   duration: 1500,
+  viewFactor: -1,
 });
 
 ScrollReveal().reveal('.first-screen__logo', {
   reset: false,
   scale: 1.4,
   duration: 2500,
+  viewFactor: -1,
 });
 
 ScrollReveal().reveal('.first-screen__text', {
@@ -64,12 +72,14 @@ ScrollReveal().reveal('.first-screen__text', {
   origin: 'bottom',
   distance: '300px',
   duration: 2500,
+  viewFactor: -1,
 });
 
 ScrollReveal().reveal('.project-description__title', {
   reset: false,
   scale: 1.4,
   duration: 1500,
+  viewFactor: -1,
 });
 
 ScrollReveal().reveal('.project-description__text', {
@@ -77,6 +87,7 @@ ScrollReveal().reveal('.project-description__text', {
   origin: 'bottom',
   distance: '150px',
   duration: 2000,
+  viewFactor: -1,
 });
 
 if (mediaQuery1024.matches) {
@@ -85,6 +96,7 @@ if (mediaQuery1024.matches) {
     origin: 'right',
     distance: '300px',
     duration: 1500,
+    viewFactor: -1,
   });
 } else {
   ScrollReveal().reveal('.about__text--1', {
@@ -92,6 +104,7 @@ if (mediaQuery1024.matches) {
     origin: 'left',
     distance: '300px',
     duration: 2500,
+    viewFactor: -1,
   });
 
   ScrollReveal().reveal('.about__text--2', {
@@ -99,6 +112,7 @@ if (mediaQuery1024.matches) {
     origin: 'right',
     distance: '300px',
     duration: 2500,
+    viewFactor: -1,
   });
 }
 
@@ -106,6 +120,7 @@ ScrollReveal().reveal('.do-more__menu-item', {
   reset: false,
   scale: 1.6,
   duration: 1700,
+  viewFactor: -1,
 });
 
 ScrollReveal().reveal('.do-more__button', {
@@ -113,6 +128,7 @@ ScrollReveal().reveal('.do-more__button', {
   origin: 'bottom',
   distance: '200px',
   duration: 1500,
+  viewFactor: -1,
 });
 
 if (!mobileSize.matches) {
@@ -121,6 +137,7 @@ if (!mobileSize.matches) {
     origin: 'left',
     distance: '200px',
     duration: 1500,
+    viewFactor: -1,
   });
 
   ScrollReveal().reveal('.offer__opportunity', {
@@ -128,6 +145,7 @@ if (!mobileSize.matches) {
     origin: 'top',
     distance: '200px',
     duration: 1500,
+    viewFactor: -1,
   });
 
   ScrollReveal().reveal('.offer__price-animation-container', {
@@ -135,6 +153,7 @@ if (!mobileSize.matches) {
     origin: 'bottom',
     distance: '200px',
     duration: 1500,
+    viewFactor: -1,
   });
 }
 
@@ -143,4 +162,5 @@ ScrollReveal().reveal('.pmo', {
   reset: false,
   scale: 1.5,
   duration: 1500,
+  viewFactor: -1,
 });

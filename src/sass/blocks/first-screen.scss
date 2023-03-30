@@ -52,6 +52,13 @@
     bottom: 0px;
   }
 
+  &::after {
+    @include defaul-pseudo-element(25px);
+    @include centering-width-pseudo-element();
+    background: url(./../../public/img/chevron-down.svg);
+    bottom: -17px;
+  }
+
   @media (max-width: $size--3) {
     display: none;
   }
@@ -60,7 +67,7 @@
     animation-name: toScroll--size-3;
   }
   @media (max-width: $size--7) {
-    top: 70vh;
+    top: 60vh;
     animation-name: toScroll--size-7;
   }
 }
@@ -91,13 +98,13 @@
 
 @keyframes toScroll--size-7 {
   from {
-    top: 70vh;
+    top: 60vh;
   }
   50% {
-    top: 72vh;
+    top: 62vh;
   }
   100% {
-    top: 70vh;
+    top: 60vh;
   }
 }
 
@@ -180,12 +187,12 @@
 
   @media (max-width: $size--3) {
     top: 25%;
-    width: 80%;
+    width: 90%;
   }
 
   @media (max-width: 650px) {
     top: 20%;
-    width: 80%;
+    width: 90%;
   }
 
   @media (max-width: $size--2) {
@@ -232,6 +239,7 @@
 
   @media (max-width: $size--3) {
     margin-bottom: 30.6px;
+    width: 65vw;
   }
 }
 

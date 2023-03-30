@@ -1,5 +1,6 @@
 const controlers = document.querySelectorAll('.offer__slider-button');
 const offers = document.querySelectorAll('.offer');
+const mobileSize = window.matchMedia('(max-width: 600px)');
 
 const changeActiveElement = (isLeft) => {
   let activeOffer;
@@ -42,9 +43,12 @@ const onControlerClick = (controler) => {
   }
 };
 
-
 export const startSlider = () => {
-  controlers.forEach((controler, i) => {
-    controler.addEventListener('click', () => onControlerClick(controler, i));
-  });
+  if (mobileSize.matches) {
+    document.querySelector('.offer--active').classList.remove('offer--active');
+    offers[2].classList.add('offer--active');
+    controlers.forEach((controler) => {
+      controler.addEventListener('click', () => onControlerClick(controler));
+    });
+  }
 };
