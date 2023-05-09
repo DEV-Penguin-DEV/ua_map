@@ -234,3 +234,28 @@
     display: block !important;
   }
 }
+
+.swiper-pagination {
+  bottom: -10px !important;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80% !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  left: auto !important;
+}
+
+.swiper-pagination-bullet {
+  width: 6px !important;
+  height: 6px !important;
+  border: 2px solid $title-color;
+  background-color: transparent;
+  opacity: 1 !important;
+  transition: 0.2s;
+
+  &-active {
+    transition: 0.2s;
+    background-color: $title--text-color !important;
+    border-color: $title--text-color !important;
+  }
+}
