@@ -46,14 +46,14 @@
   height: 70px;
 
   &::before {
-    @include defaul-pseudo-element(2px, 40px);
+    @include default-pseudo-element(2px, 40px);
     @include centering-width-pseudo-element();
     background-color: #ffffff;
     bottom: 0px;
   }
 
   &::after {
-    @include defaul-pseudo-element(25px);
+    @include default-pseudo-element(25px);
     @include centering-width-pseudo-element();
     background: url(./../../public/img/chevron-down.svg);
     bottom: -17px;

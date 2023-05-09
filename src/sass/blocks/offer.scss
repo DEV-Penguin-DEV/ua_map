@@ -7,7 +7,7 @@
   width: 420px;
 
   &::before {
-    @include defaul-pseudo-element(100%, 10px);
+    @include default-pseudo-element(100%, 10px);
     bottom: 0;
     left: 0;
     background: linear-gradient(180deg, #0047ff 0%, #2f0dff 100%);
@@ -84,7 +84,7 @@
   @include margin-bottom(60px);
 
   &::before {
-    @include defaul-pseudo-element(100px, 10px);
+    @include default-pseudo-element(100px, 10px);
     border: 1px solid #ffffff;
     bottom: -10px;
     box-sizing: border-box;
@@ -144,7 +144,7 @@
   opacity: 0.5;
 
   &::before {
-    @include defaul-pseudo-element(20px);
+    @include default-pseudo-element(20px);
     background: url("./../../public/img/star.svg") no-repeat center;
     left: -40px;
     top: 3px;
@@ -193,7 +193,7 @@
     position: relative;
 
     &::before {
-      @include defaul-pseudo-element(100%, 1px);
+      @include default-pseudo-element(100%, 1px);
       background: #d60335;
       top: 10px;
     }

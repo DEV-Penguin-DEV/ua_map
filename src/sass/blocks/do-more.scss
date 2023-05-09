@@ -90,7 +90,7 @@
   }
 
   &::before {
-    @include defaul-pseudo-element(0, 3px);
+    @include default-pseudo-element(0, 3px);
     transition: 0.85s;
     bottom: -10px;
     left: 50%;
@@ -167,7 +167,7 @@
   transition: 1s;
 
   &::before {
-    @include defaul-pseudo-element(100%, 75%);
+    @include default-pseudo-element(100%, 75%);
     background: linear-gradient(
       180deg,
       rgba(0, 71, 255, 0) -12.47%,
@@ -179,7 +179,7 @@
   }
 
   &::after {
-    @include defaul-pseudo-element(100%, 75%);
+    @include default-pseudo-element(100%, 75%);
     background: rgba(13, 13, 13, 0.5);
     backdrop-filter: blur(12.5px);
     bottom: 0;

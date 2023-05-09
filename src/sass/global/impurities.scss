@@ -22,7 +22,7 @@
   margin-bottom: $margin;
 }
 
-@mixin defaul-pseudo-element($width, $height: $width) {
+@mixin default-pseudo-element($width, $height: $width) {
   content: "";
   position: absolute;
   width: $width;
@@ -37,8 +37,12 @@
 
 @mixin centering-hight-pseudo-element() {
   top: 50%;
-
   transform: translateY(-50%);
+}
+
+@mixin rotate-centering-hight-element($rotate) {
+  top: 50%;
+  transform: translateY(-50%) rotate($rotate);
 }
 
 @mixin centering-width-pseudo-element() {

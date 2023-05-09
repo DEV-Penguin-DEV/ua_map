@@ -12,12 +12,9 @@
   }
 
   &--mobile {
-    display: none !important;
-
-    @media (max-width: $size--3) {
-      display: block !important;
-      height: 140px;
-    }
+    height: 140px;
+    width: 80%;
+    margin: 0 auto;
 
     & .do-more-bg__img--plant {
       width: 80px;
@@ -202,6 +199,38 @@
   justify-content: center !important;
 }
 
+.slider-button {
+  width: 40px;
+  height: 40px;
+  background: url("./../../public/img/arrow-offer.svg") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  z-index: 10;
+  @include centering-hight-pseudo-element;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    scale: 1.2;
+    transition: 0.5s;
+  }
+}
+
+.swiper-button-next {
+  right: 20px;
+  @include rotate-centering-hight-element(180deg);
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
 .container-slider {
+  position: relative;
   order: 4;
+  display: none !important;
+
+  @media (max-width: $size--3) {
+    display: block !important;
+  }
 }

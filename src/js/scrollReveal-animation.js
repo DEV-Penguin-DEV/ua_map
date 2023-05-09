@@ -42,7 +42,7 @@ if (!mobileSize.matches) {
     viewFactor: -60,
   });
 } else {
-  ScrollReveal().reveal('.do-more-bg--mobile', {
+  ScrollReveal().reveal('.container-slider', {
     reset: false,
     distance: '100px',
     origin: 'bottom',
