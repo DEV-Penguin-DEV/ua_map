@@ -6,6 +6,7 @@
     &--active {
       &#{$el} {
         animation: scale $duraction $delay forwards ease-in-out;
+        will-change: scale;
       }
     }
   }
@@ -44,6 +45,7 @@
     &--active {
       &#{$el} {
         animation: move $duraction $delay forwards ease-in-out;
+        will-change: opacity, transform;
       }
     }
   }
