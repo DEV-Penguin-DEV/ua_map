@@ -13,7 +13,7 @@ html {
   color: $main-text-color;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  overflow-x: clip;
+  overflow-x: hidden;
 
   &::before {
     @include default-pseudo-element(260px, 260px);

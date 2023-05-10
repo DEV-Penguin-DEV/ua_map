@@ -1,24 +1,25 @@
-const blockElements = document.querySelectorAll('.block-animation');
-
 const Visible = function (target) {
   // Все позиции элемента
   const targetPosition = {
       top: window.pageYOffset + target.getBoundingClientRect().top,
       left: window.pageXOffset + target.getBoundingClientRect().left,
       right: window.pageXOffset + target.getBoundingClientRect().right,
-      bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+      bottom: window.pageYOffset + target.getBoundingClientRect().bottom,
     },
     // Получаем позиции окна
     windowPosition = {
       top: window.pageYOffset,
       left: window.pageXOffset,
       right: window.pageXOffset + document.documentElement.clientWidth,
-      bottom: window.pageYOffset + document.documentElement.clientHeight
+      bottom: window.pageYOffset + document.documentElement.clientHeight,
     };
-  if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+  if (
+    targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
     targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
     targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
-    targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+    targetPosition.left < windowPosition.right
+  ) {
+    // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
     // Если элемент полностью видно, то запускаем следующий код
     if (!target.classList.contains('block-animation--active')) {
       target.classList.add('block-animation--active');
@@ -31,10 +32,42 @@ const Visible = function (target) {
   }
 };
 
+const addBaseAnimationClass = (...classes) => {
+  classes.forEach((elClass) => {
+    document.querySelectorAll(elClass).forEach((el) => {
+      el.classList.add('block-animation');
+      window.addEventListener('scroll', () => Visible(el));
+    });
+  });
+};
+
 export const startAnimation = () => {
-  for (let i = 0; i < 3; i++) {
-    Visible(blockElements[i]);
-  }
+  addBaseAnimationClass(
+    '.industry',
+    '.title--animation',
+    '.title--text',
+    '.do-more-bg__map',
+    '.container-slider',
+    '.do-more-bg__img',
+    '.main-footer__container',
+    '.first-screen__logo',
+    '.first-screen__text',
+    '.project-description__title',
+    '.project-description__text',
+    '.about__text',
+    '.about__text--1',
+    '.about__text--2',
+    '.do-more__menu-item',
+    '.do-more__button',
+    '.offer__title',
+    '.offer__opportunity',
+    '.offer__price-animation-container',
+    '.pmo'
+  );
+  const blockElements = document.querySelectorAll('.block-animation');
+  blockElements.forEach((el) => {
+    Visible(el);
+  });
   blockElements.forEach((block) => {
     window.addEventListener('scroll', () => Visible(block));
   });
