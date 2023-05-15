@@ -14,7 +14,11 @@ const onMapIcon = (mapIcon) => {
   const icon = mapIcon.src;
   const title = mapIcon.dataset.title;
   const text = mapIcon.dataset.text;
+  blockImg.classList.add('animation');
   blockImg.src = icon;
+  window.setTimeout(() => {
+    blockImg.classList.remove('animation');
+  }, 450);
   blockTitle.textContent = title;
   blockText.textContent = text;
   block.classList.add('do-more__item--active');
